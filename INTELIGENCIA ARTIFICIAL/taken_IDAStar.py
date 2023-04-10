@@ -67,3 +67,13 @@ if __name__ == '__main__':
     for state in path:
         print_board(state)
         print()
+        
+        '''
+                Este código implementa el algoritmo IDA* para resolver el juego del 15. El juego del 15 es un rompecabezas en el que se mueven fichas numeradas en una cuadrícula para ordenarlas del 1 al 15. El objetivo del algoritmo es encontrar una secuencia de movimientos que lleve al estado inicial del juego al estado final.
+
+                El código utiliza la distancia de Manhattan como heurística para estimar la distancia del estado actual al estado final. La distancia de Manhattan es la suma de las distancias horizontales y verticales de cada ficha a su posición final.
+
+                El algoritmo comienza con un límite igual a la distancia de Manhattan del estado inicial al estado final. Luego, se expande el estado actual y se calcula la distancia de Manhattan de cada vecino. Si la suma de la distancia del vecino y la longitud del camino actual es menor o igual al límite, se agrega el vecino al camino. Si la suma es mayor que el límite, se actualiza el límite con el valor mínimo de esta suma.
+
+                El proceso se repite hasta que se alcanza el estado final o se agota el espacio de búsqueda. Cuando se encuentra la solución, el código imprime la secuencia de movimientos que lleva del estado inicial al estado final.
+        '''
